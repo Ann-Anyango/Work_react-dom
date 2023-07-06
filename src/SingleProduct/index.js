@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import React,{ useState, useEffect, useCallback } from 'react';
-import './styles.css'
+import './style.css'
 
 const SingleProduct = () => {
   const { id } = useParams();

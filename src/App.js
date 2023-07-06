@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import './App.css';
 import Login from './Login';
@@ -8,19 +7,14 @@ import SingleProduct from './SingleProduct';
 function App() {
   return (
     <div >
-     {/* <Login/>
-     <Products/> */}
+
      <Router>
-      {/* <nav>
-        <Link to="/"> LOGIN </Link>
-        <Link to="/products"> PRODUCTS</Link>
-        <Link to="/description/:id"> PRODUCT DESCRIPTION </Link>
-      </nav> */}
+      
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/products" element={<Products />} />
-        <Route path="/products/:id" element={<SingleProduct />} />
-        <Route path="/newproduct" element={<AddProduct />} />
+        <Route path="/products" element={<SingleProduct />} />
+        <Route path="/newproduct" element={<newProduct />} />
        
       </Routes>
     </Router>
